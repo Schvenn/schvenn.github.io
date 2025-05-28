@@ -1,128 +1,43 @@
-<html>
-<p><b><span style='font-size:14.0pt;line-height:107%'>PowerShell
-Development Speed Run!</b></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PowerShell Development Speed Run</title>
+<style>
+  body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.6; padding: 0 1rem; }
+  h1 { font-size: 2rem; }
+  h2 { margin-top: 2rem; }
+  a { color: #0366d6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
 
-<p>I'm working on a DLP project for a large corporation right
-now, but this is a short-term contract and I will therefore need work after
-this is done. So, I'm levelling up some of my skills at the same time. I’ve
-started with automation and PowerShell scripting and I’ve certainly learned a
-lot. Here’s what I’ve accomplished in the last month:</p>
+<h1>PowerShell Development Speed Run!</h1>
 
-<p><b><a href="https://github.com/Schvenn/Archives">Archives</a>:</b> A utility to backup and restore the current
-child directory structure with user configurable settings for basic scheduling,
-exclusions and maximum archive retention.</p>
+<p>I'm working on a DLP project for a large corporation right now, but this is a short-term contract. So I'm levelling up some of my skills in parallel. I've focused on automation and PowerShell scripting this month — here's what I've built:</p>
 
-<p><b><a href="https://github.com/Schvenn/Assets">Assets</a>:</b> A utility to view scripts, commands and
-functions within PowerShell, in a contextualized manner, on screen, or open
-them for editing. Extremely useful for development purposes.</p>
+<ul>
+  <li><strong><a href="https://github.com/Schvenn/Archives">Archives</a>:</strong> Backup and restore current directory structures with scheduling, exclusions, and retention policies.</li>
+  <li><strong><a href="https://github.com/Schvenn/Assets">Assets</a>:</strong> View and manage PowerShell commands/functions contextually, ideal for dev workflows.</li>
+  <li><strong><a href="https://github.com/Schvenn/Caesar">Caesar</a>:</strong> Enhanced Caesar cipher utility with brute-force decryption and dictionary matching.</li>
+  <li><strong><a href="https://github.com/Schvenn/Compreschon">Compreschon</a>:</strong> Customizable dictionary-based compression and encryption — solid for secure file sharing.</li>
+  <li><strong><a href="https://github.com/Schvenn/DecodeSource">DecodeSource</a>:</strong> Local decoding of 10+ encoding types with auto-detection — no online risks.</li>
+  <li><strong><a href="https://github.com/Schvenn/FileViewer">FileViewer</a>:</strong> View and search files from PowerShell, integrates with other tools.</li>
+  <li><strong><a href="https://github.com/Schvenn/FindIn">FindIn</a>:</strong> Regex-based search tool with support for 25+ PII patterns. Core DFIR utility.</li>
+  <li><strong><a href="https://github.com/Schvenn/GetMyCommands">GetMyCommands</a>:</strong> Query installed functions and aliases with detailed insight.</li>
+  <li><strong><a href="https://github.com/Schvenn/GoodHistory">GoodHistory</a>:</strong> Smarter PowerShell history: deduped, filtered, and clean.</li>
+  <li><strong><a href="https://github.com/Schvenn/HelpText">HelpText</a>:</strong> Create and display help menus for PowerShell functions — standalone or integrated.</li>
+  <li><strong><a href="https://github.com/Schvenn/Logging">Logging</a>:</strong> Overhauled PowerShell transcript and error logging system with viewer support.</li>
+  <li><strong><a href="https://github.com/Schvenn/Navigation">Navigation</a>:</strong> CLI navigation suite: bookmarks, recents, locations, goto — built for speed.</li>
+  <li><strong><a href="https://github.com/Schvenn/Reload">Reload</a>:</strong> Reload PS modules, sessions, or commands dynamically — essential for devs.</li>
+  <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> AES256 password manager using local-only keyfiles and no external dependencies.</li>
+  <li><strong><a href="https://github.com/Schvenn/TCX2CSV">TCX2CSV</a>:</strong> Parses TCX fitness files, extracts metrics, and exports CSVs. Personal project, strong data wrangling demo.</li>
+  <li><strong><a href="https://github.com/Schvenn/VTGet">VTGet</a>:</strong> VirusTotal hash analyzer for files and URLs — no upload needed.</li>
+</ul>
 
-<p><b><a href="https://github.com/Schvenn/Caesar">Caesar</a>:</b> A module to expand the basic Caesar cipher
-functionality to rotate alphabetic characters within a file by 1 through 25
-times and add additional obfuscation techniques to plaintext files for basic
-encryption. Files or strings can be accepted and output. Files can be decrypted
-and a brute-force method can be applied to sample strings within files, using an
-English dictionary to find the most probable match and decrypt the files based
-on the results.</p>
+<p>It’s been a busy month. I’m running low on new PowerShell ideas, so I may shift gears to strengthen my Python and BASH skills next.</p>
 
-<p><b><a href="https://github.com/Schvenn/Compreschon">Compreschon</a>:</b> A unique encryption technique that goes far
-beyond the Caesar cipher, using a user customizable library for encryption and
-decryption, acting as an innocuous pre-shared key. Extremely useful for sharing
-data or code with optimal security. This is a useful cybersecurity tool for
-fast, secure file sharing.</p>
-
-<p><b><a href="https://github.com/Schvenn/DecodeSource">DecodeSource</a>:</b> A cybersecurity tool to locally decode
-strings or files and optionally save the output. Decodes 10 different
-encryption techniques and features a heuristic auto-detection mode to find the most
-probable match. Ensures sensitive data remains private by avoiding online
-decoding services, which is critical for secure incident response workflows.
-This is a must-have for cybersecurity investigations.</p>
-
-<p><b><a href="https://github.com/Schvenn/FileViewer">FileViewer</a>:</b> A cybersecurity tool to
-view files on screen with search term functionality. Accepts single files, or
-can provide a selection menu, can restrict files to just plaintext documents,
-can accept an array of files from another source as well as search terms, which
-is extremely useful in automation for receiving output from another tool.</p>
-
-<p><b><a href="https://github.com/Schvenn/FindIn">FindIn</a>:</b> This cybersecurity tool
-started as a basic text search tool, but expanded to include recursive
-directory searches, a file selection menu and user-configurable library of
-Regex search terms, which currently captures 25 different patterns of PII and other
-useful identifiers. This also is a must have for effective cybersecurity investigations.</p>
-
-<p><b><a href="https://github.com/Schvenn/GetMyCommands">GetMyCommands</a>:</b> A set
-of 4 utilities to display information about user installed functions and
-aliases. Useful for development.</p>
-
-<p><b><a href="https://github.com/Schvenn/GoodHistory">GoodHistory</a>:</b> A significant
-improvement over PowerShell’s native command history by deduplicating it and refreshing
-it with only successful commands, removing artefacts such as mistyped commands.
-Also features an improved viewer.</p>
-
-<p><b><a href="https://github.com/Schvenn/HelpText">HelpText</a>:</b> A module to allow stand-alone
-or plug-in help menus for PowerShell functions. Simplifies and standardizes
-development.</p>
-
-<p><b><a href="https://github.com/Schvenn/Logging">Logging</a>:</b> A module to improve
-PowerShell logging by instituting archival limits, cleaning transcripts, adding
-clear command and response separators and appending error logs to each session.
-It also includes an advanced file viewer which sorts by date and includes
-search functionality.</p>
-
-<p><b><a href="https://github.com/Schvenn/Navigation">Navigation</a>:</b> This is the module
-that started it all. It comes with several functions to make navigating via the
-command line in PowerShell much faster. They include:</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'><b>Goto</b>,
-which allows fast auto-completion and directory traversal, featuring a directory
-cache.</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'>feature for increased speed.</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'><b>Locations</b>, which
-allows user-configurable single command jumps to common locations.</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'><b>Bookmarks</b>, similar
-in nature to Locations, but provides a menu system of common locations for</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'>quicker navigation than
-through typing entire paths.</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'><b>Navigation</b>, this
-module is so large, that I had to create its own help menu function.</p>
-
-<p class=MsoNormal style='text-indent:36.0pt'><b>Recents</b>,
-provides a menu of the most recently navigated directories, useful for fast
-retracing </p>
-
-<p class=MsoNormal style='text-indent:36.0pt'>steps during extended PowerShell
-sessions.</p>
-
-<p><b><a href="https://github.com/Schvenn/Reload">Reload</a>:</b> A tool to reload modules,
-commands or PowerShell sessions in an intelligent manner, on the fly. A must have
-for PowerShell development.</p>
-
-<p><b><a href="https://github.com/Schvenn/Secure">Secure</a>:</b> A full-fledged password
-manager with AES256 bit encryption and a PBKDF2 (Password-Based Key Derivation
-Function 2) master password. Includes key and database creation and encryption,
-password retrieval, creation and deletion. Since it’s local and doesn’t rely on
-external libraries, it eliminates the need for online storage and makes data
-compromise far more unlikely than with any other method.</p>
-
-<p><b><a href="https://github.com/Schvenn/TCX2CSV">TCX2CSV</a>:</b> A personal project to read TCX
-JSON files from sources, such as Strava, extracting data, calculating new fields
-and exporting them to a single file, useful for import into personal run
-trackers. While very specific, it demonstrates the flexibility of PowerShell to
-extract and manipulate JSON data for use in other sources.</p>
-
-<p><b><a href="https://github.com/Schvenn/VTGet">VTGet</a>:</b> A cybersecurity tool for
-interacting with the VirusTotal API to retrieve malware analysis data regarding
-URLs and files. The file mechanism calculates hashes locally, thereby
-maintaining the security of sensitive data and only shares the hash with
-VirusTotal for evaluation.</p>
-
-<p>Well, it’s certainly been a busy month. I’ve kind of run out
-of ideas for new tools I can create in PowerShell, though. So, if nothing new
-comes to mind, I might take a breather and move onto improving my Python and BASH
-skills.</p>
 </body>
 </html>
