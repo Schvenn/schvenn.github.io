@@ -2,11 +2,12 @@
 <head>
 <title>PowerShell Development Speed Run</title>
 <style>
-  body {background:#1c1c1c; color:white; font-family: sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.6; padding: 0 1rem}
+  body {background:black; color:white; font-family: sans-serif; max-width: 800px; margin: 2rem auto; line-height: 1.6}
   h1 {font-size: 2rem}
   h2 {margin-top: 2rem}
   a {color: #0366d6; text-decoration: none}
   a:hover {text-decoration: underline}
+  img {border-radius: 6px}
   ul {padding-left: 1.2em}
   .profile-container {display: flex; align-items: center; gap: 16px}
   .profile-pic {border-radius: 24px; object-fit: cover}
@@ -15,11 +16,12 @@
 </head>
 <body>
 
-<div class="profile-container">
+<div class="profile-container" style="background:#1c1c1c; padding:0px; padding-left: 15px; border-radius: 12px">
   <img src="https://avatars.githubusercontent.com/u/42421399?s=96&v=4" class="profile-pic">
   <div class="profile-text"><h1>PowerShell Development<br>Speed Run!</h1></div>
 </div>
 
+<div style="max-width: 800px; background:#151515; padding:10px; border-radius: 12px">
 <p>Are you looking for a cybersecurity professional with Threat Hunting, SOC Analyst, Incident Handling, Automation and Detection Engineering experience? If so, then please contact me. I'm looking for my next career opportunity. 
 I'm a Canadian citizen and have my Secret Clearance with the Federal government of Canada. You can find me here on GitHub and on LinkedIn.</p>
 <p>I'm working on a DLP project for a large corporation right now, but this is a short-term contract. So I'm levelling up my scripting and automation skills in parallel. I've focused on PowerShell this month and here's what I've built, so far:</p>
@@ -32,17 +34,18 @@ I'm a Canadian citizen and have my Secret Clearance with the Federal government 
   <table border=0><tr><td width=600>
   <img src="https://raw.githubusercontent.com/Schvenn/DecodeSource/refs/heads/main/Screenshot%202025-05-30%20121439.png" width=600px>
   </td><td>
-  <font color=#FFFF99>Decoding artefacts without exposing them to public sources is essential to data privacy during cybersecurity investigations!</font>
+  <font color=#FFFF99>Decoding artefacts without exposing them to public sources is essential to data privacy during cybersecurity investigations.</font>
   </td></tr></table></li>
   <li><strong><a href="https://github.com/Schvenn/FileViewer">FileViewer</a>:</strong> View and search files from PowerShell, integrates with other tools.</li>
-  <table border=0><tr><td width=600>
+  <table border=0><tr><td width=120 valign=top>
   <font color=#FFFF99>This is great for cybersecurity automation and investigation.</font><br>
   </td><td>
-  <img src="https://raw.githubusercontent.com/Schvenn/FileViewer/refs/heads/main/Screenshot%202025-05-30%20022719.png" width=600px>
+  <img src="https://raw.githubusercontent.com/Schvenn/FileViewer/refs/heads/main/Screenshot%202025-05-30%20022719.png" width=640px>
   </td></tr></table>
-  <li><strong><a href="https://github.com/Schvenn/FindIn">FindIn</a>:</strong> Regex-based search tool with support for user-configurable patterns; includes 25 pre-configured patterns covering essential PII data, with dynamic file viewer, passthrough search support and results export.
-  <br><font color=#FFFF99>This is a core cybersecurity investigation utility!</font><br><br>
-  <table border=1 bgcolor=#440000 align=center><tr><td valign=top><ol>
+  <li><strong><a href="https://github.com/Schvenn/FindIn">FindIn</a>:</strong> Regex-based search tool with support for user-configurable patterns; includes 25 pre-configured patterns covering essential PII data, with dynamic file viewer, passthrough search support and results export.<br>
+  <center><font color=#FFFF99 style="text-align:center"><td colspan="2">This is a core cybersecurity utility currently in active use for DLP investigations.</font></center>
+  <table border=1 bgcolor=#440000 align=center style="width:700px; border-radius: 12px">
+  <tr><td valign=top><ol>
   <li>Names</li>
   <li>Phone numbers</li>
   <li>US ZIP codes</li>
@@ -78,14 +81,15 @@ I'm a Canadian citizen and have my Secret Clearance with the Federal government 
   <li><strong><a href="https://github.com/Schvenn/Logging">Logging</a>:</strong> Overhauled PowerShell transcript and error logging system with viewer support.</li>
   <li><strong><a href="https://github.com/Schvenn/Navigation">Navigation</a>:</strong> CLI navigation suite: <font color=#FFFF99>bookmarks</font>, <font color=#FFFF99>recents</font>, <font color=#FFFF99>locations</font>, <font color=#FFFF99>goto</font>, all built for speed.</li>
   <li><strong><a href="https://github.com/Schvenn/Reload">Reload</a>:</strong> Reload PowerShell modules, sessions, or commands dynamically. <br><font color=#FFFF99>This is essential for developers.</font></li>
-  <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> AES256 password manager featuring a PBKDF2 master password, using local-only keyfiles and no external dependencies. <br><font color=#FFFF99>This is essential for secure envionments, such as secure SOCs!</font></li>
+  <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> AES256 password manager featuring a PBKDF2 master password, using local-only keyfiles and no external dependencies. <br><font color=#FFFF99>This is essential for secure envionments, such as secure SOCs and is being actively utilized.</font></li>
   <img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/Screenshot%202025-05-30%20010000.png" width=400px>
   <li><strong><a href="https://github.com/Schvenn/TCX2CSV">TCX2CSV</a>:</strong> Parses TCX fitness files, extracts and calculates metrics, and exports CSVs. This is a personal project, but is also useful as a data wrangling demonstration.</li>
-  <li><strong><a href="https://github.com/Schvenn/VTGet">VTGet</a>:</strong> VirusTotal hash analyzer for files and URLs, no uploads needed. <br><font color=#FFFF99>This is great for cybersecurity investigations and ticketing documentation and demonstrates API interaction.</font></li>
-  <img src="https://raw.githubusercontent.com/Schvenn/VTGet/refs/heads/main/Screenshot%202025-05-30%20013615.png" width=800px>
+  <li><strong><a href="https://github.com/Schvenn/VTGet">VTGet</a>:</strong> VirusTotal hash analyzer for files and URLs, no uploads needed. <br><font color=#FFFF99>This is being actively utilized in current cybersecurity investigations for improving ticketing documentation and demonstrates API interaction.</font></li>
+  <img src="https://raw.githubusercontent.com/Schvenn/VTGet/refs/heads/main/Screenshot%202025-05-30%20013615.png" width=760px>
   </ul>
 <p>It has been a busy month, but I’m running low on new PowerShell ideas, so I may shift gears to strengthen my Python and BASH skills next. Happy threat hunting!</p>
-<div align=right>Craig Plath: Cybersecurity Professional</div>
+<div style="text-align:right">Craig Plath: Cybersecurity Professional</div>
+</div>
 </body>
 </html>
 </html>
