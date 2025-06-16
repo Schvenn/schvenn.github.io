@@ -80,11 +80,19 @@ I'm a Canadian citizen and have my Secret Clearance with the Federal government 
   <li><strong><a href="https://github.com/Schvenn/HelpText">HelpText</a>:</strong> Create and display help menus for PowerShell functions, either standalone or integrated.</li>
   <li><strong><a href="https://github.com/Schvenn/Logging">Logging</a>:</strong> Overhauled PowerShell transcript and error logging system with viewer support.</li>
   <li><strong><a href="https://github.com/Schvenn/Navigation">Navigation</a>:</strong> CLI navigation suite: <font color=#FFFF99>bookmarks</font>, <font color=#FFFF99>recents</font>, <font color=#FFFF99>locations</font>, <font color=#FFFF99>goto</font>, all built for speed.</li>
-  <li><strong><a href="https://github.com/Schvenn/Reload">Reload</a>:</strong> Reload PowerShell modules, sessions, or commands dynamically. <br><font color=#FFFF99>This is essential for developers.</font></li>
-  <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> AES256 password manager featuring a PBKDF2 master password, using local-only keyfiles and no external dependencies. The database files are serialized JSON, GZIP compressed, prepended with the AES IV, encrypted using AES-256-CBC, and Base64-encoded.<br><font color=#FFFF99>This is essential for secure envionments, such as secure SOCs and is being actively utilized and developed.</font><br>
-  <table border=0><tr><td width=50%><img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/screenshots/Main%20Menu.png" width=400px align=top></td>
-  <td valign=top><br><b><font color=#0366d6>Under Development:</font></b><br><br>
-  <b><font color=yellow>HMAC (Hash-Based Message Authentication Code)</font></b> and <b><font color=yellow>RBAC (Role-Based Access Control)</font></b> are on the way, which will make this product meet the requirements for several <b><font color=yellow>NIST</font></b>, <b><font color=yellow>OWASP</font></b>, <b><font color=yellow>RBAC</font></b> and <b><font color=yellow>Zero Trust</font></b> standards and with proper policies in place, this could even be utilized in <b><font color=yellow>ISO-27001</font></b> and <b><font color=yellow>SOC 2</font></b> aligned organizations. It already exceeds the security standards of some commercially available options, without these additions.</td></tr></table>
+  <li><strong><a href="https://github.com/Schvenn/Reload">Reload</a>:</strong> Reload PowerShell modules, sessions, or commands dynamically. <br><font color=#FFFF99>This is essential for developers.</font></li><br>
+  <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> Enterprise grade Password Manager, using local-only dependencies!<br><font color=#FFFF99>This is essential for secure envionments, such as secure SOCs and is being actively utilized and developed.</font><br>
+  <table border=0><tr><td colspan=2 align=center><b><font color=#0366d6 size=10>Enterprise Grade Features:</font></b></td></tr>
+  <tr><td width=50%><img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/screenshots/Main%20Menu.png" width=400px align=top></td>
+  <td valign=top>
+  • The master password is protected by PBKDF2 hashing, with separated authentication.<br><br>
+  • Per-entry and per-database integrated HMACs ensure integrity and detect tampering.<br><br>
+  • AES-256-CBC encryption with unique random IVs for each key file, each password entry, and the entire database.<br><br>
+  • The database and each password entry are also Base64 encoded.<br><br>
+  • The database storage is serialized to JSON, compressed with GZIP, then encrypted and Base64-encoded.<br><br>
+  • <font color=yellow><i>This means that each password is secured behind 7 layers of protection!</i></font><br><br>
+  • Designed for zero-trust handling; the keys, secrets and database are overwritten multiple times and removed using multiple methods, between every significant action.
+  </td></tr></table><br>
   </li>
   <li><strong><a href="https://github.com/Schvenn/TCX2CSV">TCX2CSV</a>:</strong> Parses TCX fitness files, extracts and calculates metrics, and exports CSVs. This is a personal project, but is also useful as a data wrangling demonstration.</li>
   <li><strong><a href="https://github.com/Schvenn/VTGet">VTGet</a>:</strong> VirusTotal hash analyzer for files and URLs, no uploads needed. <br><font color=#FFFF99>This is being actively utilized in current cybersecurity investigations for improving ticketing documentation and demonstrates API interaction.</font></li>
