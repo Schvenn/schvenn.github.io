@@ -83,15 +83,19 @@ I'm a Canadian citizen and have my Secret Clearance with the Federal government 
   <li><strong><a href="https://github.com/Schvenn/Reload">Reload</a>:</strong> Reload PowerShell modules, sessions, or commands dynamically. <br><font color=#FFFF99>This is essential for developers.</font></li><br>
   <li><strong><a href="https://github.com/Schvenn/Secure">Secure</a>:</strong> Enterprise grade Password Manager, using local-only dependencies!<br><font color=#FFFF99>This is essential for secure envionments, such as secure SOCs and is being actively utilized and developed.</font><br>
   <table border=0><tr><td colspan=2 align=center><b><font color=#0366d6 size=10>Enterprise Grade Features:</font></b></td></tr>
-  <tr><td width=50%><img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/screenshots/Main%20Menu.png" width=400px align=top></td>
+  <tr><td width=50%><img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/screenshots/Main%20Menu.png" width=400px align=top><br><br>
+  <img src="https://raw.githubusercontent.com/Schvenn/Secure/refs/heads/main/screenshots/Management%20Menu.png" width=400px align=top></td>
   <td valign=top>
-  • The master password is protected by PBKDF2 hashing, with separated authentication.<br><br>
-  • Per-entry and per-database integrated HMACs ensure integrity and detect tampering.<br><br>
-  • AES-256-CBC encryption with unique random IVs for each key file, each password entry, and the entire database.<br><br>
-  • The database and each password entry are also Base64 encoded.<br><br>
-  • The database storage is serialized to JSON, compressed with GZIP, then encrypted and Base64-encoded.<br><br>
-  • <font color=yellow><i>This means that each password is secured behind 7 layers of protection!</i></font><br><br>
-  • Designed for zero-trust handling; the keys, secrets and database are overwritten multiple times and removed using multiple methods, between every significant action.
+	<br>• Database passwords are secured, encrypted and never stored.
+	<br><br>• User passwords and Master passwords are secured similarly and validated via a separate authentication mechanism.
+	<br><br>• All sensitive files are encrypted and HMAC validated to ensure integrity and detect tampering.
+	<br><br>• The script itself employs NTP time synchronization and hash verification to enable trusted source execution.
+	<br><br>• Each password entry within a database is individually encrypted, Base64 encoded and also features HMAC validation.
+	<br><br>• Employs security features such as: PBKDF2 with salt and SHA-256 hashing, AES-256-CBC encryption with random IV and HMAC validation.
+	<br><br>• Designed with zero-trust principles; keys, secrets, and databases are securely wiped multiple times using diverse methods after critical operations.
+	<br><br>• Role-Based Access Control (RBAC) enforces two-factor authentication and three privilege levels.
+	<br><br>• Brute-force protection mechanisms safeguard both the master password and individual user accounts.
+	<br><br>• Comprehensive, timestamped activity logs record both standard and administrative user actions.
   </td></tr></table><br>
   </li>
   <li><strong><a href="https://github.com/Schvenn/TCX2CSV">TCX2CSV</a>:</strong> Parses TCX fitness files, extracts and calculates metrics, and exports CSVs. This is a personal project, but is also useful as a data wrangling demonstration.</li>
